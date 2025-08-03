@@ -1,5 +1,27 @@
 # 📚 Library Management System
 
+A comprehensive Library Management System built with Django and Django REST Framework that facilitates user authentication, book and category management, member handling, borrowing/return tracking, and an admin dashboard for analytics. Designed for scalability and easy maintenance, this system supports role-based access and a robust API structure for frontend or mobile app integration.
+
+---
+
+## 📑 Table of Contents
+
+- [🔐 Authentication Endpoints](#-authentication-endpoints)
+- [🗂️ Category Endpoints](#️-category-endpoints)
+- [📘 Book Endpoints](#-book-endpoints)
+- [👥 Member Endpoints](#-member-endpoints)
+- [📚 Borrowing/Returning Endpoints](#-borrowingreturning-endpoints)
+- [👤 User Profile Endpoints](#-user-profile-endpoints)
+- [📊 Dashboard Endpoints (ADMIN only)](#-dashboard--endpoints-admin-only)
+- [👤 User Model](#-user-model)
+- [🗂️ Category Model](#️-category-model)
+- [📘 Book Model](#-book-model)
+- [✍️ Author Model](#️-author-model)
+- [👥 Member Model](#-member-model)
+- [📚 BorrowRecord Model](#-borrowrecord-model)
+- [⚙️ Model Relationships](#️-model-relationships)
+- [🛠️ Getting Started – Clone & Run This Project](#️-getting-started--clone--run-this-project)
+
 ## **🔐 Authentication Endpoints**
 
 **These manage user registration, login, and JWT-based authentication.**
