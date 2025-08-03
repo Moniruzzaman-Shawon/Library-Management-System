@@ -1,6 +1,6 @@
-# Library Management System
+# 📚 Library Management System
 
-## **📌Authentication Endpoints**
+## **🔐 Authentication Endpoints**
 
 **These manage user registration, login, and JWT-based authentication.**
 
@@ -11,7 +11,7 @@
 | POST | `/auth/logout/` | Log out the current user |
 | POST | `/auth/token/refresh/` | Refresh an expired token |
 
-## **Category Endpoints**
+## **🗂️ Category Endpoints**
 
 Manage book categories like Fiction, Science, Biography, etc.
 
@@ -23,7 +23,7 @@ Manage book categories like Fiction, Science, Biography, etc.
 | PUT | `/api/categories/<id>/` | Update a category |
 | DELETE | `/api/categories/<id>/` | Delete a category |
 
-## **Book Endpoints**
+## **📘 Book Endpoints**
 
 Manage and retrieve books
 
@@ -37,7 +37,7 @@ Manage and retrieve books
 | DELETE | `/api/books/<id>/` | Delete a book (Admin) |
 | GET | `/api/books/?category=` | Filter books by category |
 
-## **Member Endpoints**
+## **👥 Member Endpoints**
 
 Allow viewing and managing member data.
 
@@ -48,7 +48,7 @@ Allow viewing and managing member data.
 | PUT | `/api/members/<id>/` | Update member profile (Admin) |
 | DELETE | `/api/members/<id>/` | Delete a member (Admin) |
 
-## **Borrowing/Returning Endpoints**
+## **📚 Borrowing/Returning Endpoints**
 
 Track when members borrow or return books.
 
@@ -60,7 +60,7 @@ Track when members borrow or return books.
 | PUT | `/api/borrow-records/<id>/return/` | Update book details (Admin) |
 | DELETE | `/api/borrow-records/<id>/` | Delete a book (Admin) |
 
-## **User Profile Endpoints**
+## **👤 User Profile Endpoints**
 
 Allow users (members) to view and update their profile
 
@@ -69,7 +69,7 @@ Allow users (members) to view and update their profile
 | GET | `/api/profile/` | Retrieve the user's profile |
 | PUT | `/api/profile/` | Update the user's profile |
 
-## **Dashboard  Endpoints (ADMIN only)**
+## **📊 Dashboard  Endpoints (ADMIN only)**
 
 Provide analytics for administrators.
 
@@ -80,7 +80,7 @@ Provide analytics for administrators.
 | GET | `/api/dashboard/total-borrows/` | Get total borrow transactions |
 | GET | `/api/dashboard/overdue-books/` | Get list of overdue borrow records |
 
-## **User Model**
+## **👤 User Model**
 
 Represents library staff/admin users who manage the system (not members who borrow books).
 
@@ -94,7 +94,7 @@ Represents library staff/admin users who manage the system (not members who borr
 | phone_number | Charfield | Optional phone number. |
 | password | Charfield | Hashed password for authentication. |
 
-## **Category Model**
+## **🗂️ Category Model**
 
 Groups books into categories or genres (e.g., Science Fiction, History).
 
@@ -111,7 +111,7 @@ Groups books into categories or genres (e.g., Science Fiction, History).
     (One category can have multiple books.)
     
 
-## **Book Model**
+## **📘 Book Model**
 
 Contains details about books available in the library.
 
@@ -132,7 +132,7 @@ Contains details about books available in the library.
 - Book to Author: **Many-to-One**
 - Book to Category: **Many-to-One**
 
-## **Author Model**
+## **✍️ Author Model**
 
 Stores information about authors of books.
 
@@ -149,7 +149,7 @@ Stores information about authors of books.
     (One author can write multiple books.)
     
 
-## **Member Model**
+## **👥 Member Model**
 
 Represents members (library users) who borrow books.
 
@@ -162,7 +162,7 @@ Represents members (library users) who borrow books.
 | phone_number | Charfield | Optional phone number. |
 | membership_date | DateField | Date when the membership was created. |
 
-## **BorrowRecord Model**
+## **📚 BorrowRecord Model**
 
 | **Field Name** | **Data Type** | Description |
 | --- | --- | --- |
@@ -179,9 +179,10 @@ Represents members (library users) who borrow books.
 - BorrowRecord to Member: **Many-to-One**
 
 
+
 <img width="3819" height="2426" alt="LMS_(1)" src="https://github.com/user-attachments/assets/87dc834a-ae9e-4dbd-bc7f-a234430b8bda" />
 
-## 📚 Library Management System – Model Relationships
+## ⚙️ Model Relationships
 
 **1. User**
 
