@@ -232,8 +232,6 @@ Follow the steps below to clone this repository and set up the project on a new 
 ### 🔁 1. Clone the Repository
 
 ```bash
-bash
-CopyEdit
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 
@@ -248,8 +246,6 @@ Replace `<your-username>` and `<your-repo-name>` with your actual GitHub details
 ### For Windows:
 
 ```bash
-bash
-CopyEdit
 python -m venv venv
 venv\Scripts\activate
 
@@ -258,8 +254,6 @@ venv\Scripts\activate
 ### For macOS/Linux:
 
 ```bash
-bash
-CopyEdit
 python3 -m venv venv
 source venv/bin/activate
 
@@ -270,8 +264,6 @@ source venv/bin/activate
 ### 📦 3. Install Project Dependencies
 
 ```bash
-bash
-CopyEdit
 pip install -r requirements.txt
 
 ```
@@ -279,8 +271,6 @@ pip install -r requirements.txt
 If `requirements.txt` doesn't exist yet, you can generate it from your current environment:
 
 ```bash
-bash
-CopyEdit
 pip freeze > requirements.txt
 
 ```
@@ -290,8 +280,6 @@ pip freeze > requirements.txt
 ### ⚙️ 4. Apply Migrations
 
 ```bash
-bash
-CopyEdit
 python manage.py migrate
 
 ```
@@ -301,8 +289,6 @@ python manage.py migrate
 ### 👤 5. Create Superuser (Optional but Recommended)
 
 ```bash
-bash
-CopyEdit
 python manage.py createsuperuser
 
 ```
@@ -312,8 +298,6 @@ python manage.py createsuperuser
 ### 🚀 6. Run the Development Server
 
 ```bash
-bash
-CopyEdit
 python manage.py runserver
 
 ```
