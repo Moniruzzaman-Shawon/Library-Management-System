@@ -211,3 +211,131 @@ Represents members (library users) who borrow books.
 
 - Many-to-One with `Member`.
 - Many-to-One with `Book`.
+
+
+
+# Steps to clone
+
+## 🛠️ Getting Started – Clone & Run This Project
+
+Follow the steps below to clone this repository and set up the project on a new machine (Linux/macOS/Windows).
+
+### ✅ Requirements
+
+- Python 3.10 or above
+- Git
+- Virtualenv (recommended)
+- pip (Python package installer)
+
+---
+
+### 🔁 1. Clone the Repository
+
+```bash
+bash
+CopyEdit
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+
+```
+
+Replace `<your-username>` and `<your-repo-name>` with your actual GitHub details.
+
+---
+
+### 🧪 2. Create and Activate a Virtual Environment
+
+### For Windows:
+
+```bash
+bash
+CopyEdit
+python -m venv venv
+venv\Scripts\activate
+
+```
+
+### For macOS/Linux:
+
+```bash
+bash
+CopyEdit
+python3 -m venv venv
+source venv/bin/activate
+
+```
+
+---
+
+### 📦 3. Install Project Dependencies
+
+```bash
+bash
+CopyEdit
+pip install -r requirements.txt
+
+```
+
+If `requirements.txt` doesn't exist yet, you can generate it from your current environment:
+
+```bash
+bash
+CopyEdit
+pip freeze > requirements.txt
+
+```
+
+---
+
+### ⚙️ 4. Apply Migrations
+
+```bash
+bash
+CopyEdit
+python manage.py migrate
+
+```
+
+---
+
+### 👤 5. Create Superuser (Optional but Recommended)
+
+```bash
+bash
+CopyEdit
+python manage.py createsuperuser
+
+```
+
+---
+
+### 🚀 6. Run the Development Server
+
+```bash
+bash
+CopyEdit
+python manage.py runserver
+
+```
+
+Then visit: [http://127.0.0.1:8000](http://127.0.0.1:8000/)
+
+---
+
+### 🗃️ 7. Environment Variables (Optional)
+
+If you use `.env` file for secret keys or DB credentials:
+
+- Make sure to include a sample file like `.env.example`.
+- Add `.env` to `.gitignore` to avoid pushing sensitive data.
+
+---
+
+### 🌐 8. VS Code Dev Environment (Optional)
+
+If you're using **VS Code**, install recommended extensions:
+
+- Python
+- Django
+- Prettier
+- Material Icon Theme (optional)
