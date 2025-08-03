@@ -178,7 +178,8 @@ Represents members (library users) who borrow books.
 - BorrowRecord to Book: **Many-to-One**
 - BorrowRecord to Member: **Many-to-One**
 
-![LMS (1).png](Library%20Management%20System%20243d6d45040580368bcedd6aa07245ba/LMS_(1).png)
+
+<img width="3819" height="2426" alt="LMS_(1)" src="https://github.com/user-attachments/assets/87dc834a-ae9e-4dbd-bc7f-a234430b8bda" />
 
 ## 📚 Library Management System – Model Relationships
 
