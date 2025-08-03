@@ -1,6 +1,6 @@
 # Library Management System
 
-## **Authentication Endpoints**
+## **📌Authentication Endpoints**
 
 **These manage user registration, login, and JWT-based authentication.**
 
