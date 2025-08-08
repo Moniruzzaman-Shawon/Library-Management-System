@@ -5,8 +5,12 @@ from rest_framework.response import Response
 from books.models import Book, Author, Category
 from members.models import Member
 from borrow.models import BorrowRecord
-from .serializers import (AuthorSerializer, CategorySerializer, BookSerializer,
-                          MemberSerializer, BorrowRecordSerializer)
+from .serializers import AuthorSerializer, CategorySerializer
+                           
+from members.serializers import MemberSerializer
+from books.serializers import BookSerializer
+from borrow.serializers import BorrowRecordSerializer
+
 
 class AuthorViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.all()
