@@ -1,9 +1,25 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import permissions
+from rest_framework.response import Response
+from rest_framework import routers
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
 
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def api_root(request):
+    return Response({
+        "books": "/api/books/",
+        "members": "/api/members/",
+        "borrow_records": "/api/borrow-records/",
+        "categories": "/api/categories/",
+        "swagger": "/swagger/",
+        "redoc": "/redoc/",
+    })
 schema_view = get_schema_view(
     openapi.Info(
         title="Library Management System API",
@@ -16,6 +32,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', api_root, name='api-root'),
     path('api-auth/', include('rest_framework.urls')),
 
     path('api/auth/', include('djoser.urls')),     
